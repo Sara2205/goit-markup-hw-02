@@ -1,122 +1,178 @@
 /*index*/
 body {
-  background-color: rgba(255, 255, 255, 1);
-  font-family: 'Roboto','Arial', sans-serif;
+ background-color: rgba(255, 255, 255, 1);
+  font-family: 'Roboto', 'Arial', sans-serif;
 }
-.root {
-  background-color:  rgba(47, 48, 58, 1);
+:root{
+  --color-hover-focus: rgba(33, 150, 243, 1);
+  --color-letra-blanca: rgba(255, 255, 255, 1);
+  --color-resaltado-boton:  rgba(33, 150, 243, 1);
 }
-footer{
-  background: rgba(47, 48, 58, 1);
-  line-height: 1.7em;
+.soluciones{
+  background-color: rgba(47, 48, 58, 1);
 }
-.titulo-soluciones{
+footer {
+background-color:  rgba(47, 48, 58, 1);
+  --height: 1.7em;
+}
+.titulo-soluciones {
   font-size: 44px;
-  color: rgba(255, 255, 255, 1);
+  color: var(--color-letra-blanca);
   text-transform: uppercase;
 }
-.boton-uno{
+.titulo-soluciones:hover{
+color: var(--color-hover-focus)
+}
+.boton-uno {
   font-weight: 700;
   font-size: 16px;
-  background-color:rgba(33, 150, 243, 1);
-  color:rgba(255, 255, 255, 1);
-  border:none;
+  background-color: var(--color-resaltado-boton);
+  color: var(--color-letra-blanca);
+  border: none;
   border-radius: 2px;
   cursor: pointer;
   line-height: 1.8em;
 }
-.root{
+.boton-uno:focus {
+  background-color: var(--color-hover-focus);
+  color: var(--color-letra-blanca);
+}
+.boton-uno:hover {
+background-color: var(--color-hover-focus);
+  color: var(--color-letra-blanca);
+}
+.soluciones {
   line-height: 3em;
 }
-main{
+main {
   line-height: 1.7em;
 }
-.titulo-dos{
+.titulo-dos {
   font-size: 36px;
   line-height: 1em;
 }
-.index-title{
+.titulo-dos:hover{
+  color:var(--color-hover-focus)
+}
+.index-title {
   cursor: pointer;
   text-transform: uppercase;
-   color: rgba(33, 33, 33, 1)
-}
-.link{
-  text-decoration: none;
-  line-height: 1.5em;
+  color: rgba(33, 33, 33, 1);
 }
 .index-title:hover, .index-text:hover{
-color: rgba(33, 150, 243, 1)
+  color:var(--color-hover-focus)
 }
-.nombre, .texto-nombre{
+.link{
+text-decoration: none;
+--height: 1.5em;
+}
+.imagen:hover {
+  border: 2px solid var(--color-hover-focus)
+}
+.nombre,
+.texto-nombre {
   line-height: 1.1em;
 }
-.nombre:hover, .texto-nombre:hover{
-  color:rgba(33, 150, 243, 1)
+.nombre:hover,
+.texto-nombre:hover {
+  color: var(--color-hover-focus);
+  border: none;
 }
 /*portafolio*/
-header{
-  line-height: 1,7em;
+header {
+  line-height: 1, 7em;
 }
 
 .titulo-principal {
   font-family: raleway;
   font-size: 26px;
   text-decoration: none;
-  color:  rgba(33, 150, 243, 1);
+  color: rgba(33, 150, 243, 1);
 }
-.enlace-studio, .enlace-portafolio, .enlace-contacto {
+.titulo-principal:focus{
+  color:var(--color-hover-focus)
+}
+.enlace-studio,
+.enlace-portafolio,
+.enlace-contacto {
   font-weight: 500;
   text-decoration: none;
   color: rgba(33, 33, 33, 1);
   cursor: pointer;
 }
-.enlace-studio:focus, .enlace-portafolio:focus{
-  color:rgba(33, 150, 243, 1)
+.enlace-studio:before:visited,
+.enlace-portafolio:before:visited {
+  color: var(--color-hover-focus)
 }
-.enlace-studio:hover, .enlace-portafolio:hover, .enlace-contacto:hover {
-  color: rgba(33, 150, 243, 1);
+.enlace-studio:focus,
+.enlace-portafolio:focus,
+.enlace-contacto:focus {
+  color: var(--color-hover-focus)
+}
+.enlace-studio:hover,
+.enlace-portafolio:hover,
+.enlace-contacto:hover {
+  color: var(--color-hover-focus)
 }
 .contacto {
   text-decoration: none;
   color: #757575;
   cursor: pointer;
-
+}
+.contacto:focus {
+  color: var(--color-hover-focus)
 }
 .contacto:hover{
-  color: rgba(33, 150, 243, 1);
+  color: var(--color-hover-focus)
+  
 }
 .section-portafolio {
- line-height: 2em;
+  line-height: 2em;
 }
-.boton-type, .boton-type-todo {
+.boton-type,
+.boton-type-todo {
   font-weight: 700;
   color: rgba(33, 33, 33, 1);
   border: none;
   border-radius: 2px;
   cursor: pointer;
 }
-.boton-type-todo{
-  background-color: rgba(33, 150, 243, 1);
+.boton-type-todo {
+  background-color: var(--color-resaltado-boton);
 }
-.boton-type:hover, .boton-type-todo:hover {
-  background: rgba(33, 150, 243, 1);
-  color: rgba(255, 255, 255, 1);
- 
+.boton-type:focus,
+.boton-type-todo:focus {
+  background: var(--color-hover-focus);
+  color: var(--color-letra-blanca);
 }
-.portafolio-title, .portafolio-text {
+.boton-type:hover,
+.boton-type-todo:hover{
+  background-color: var(--color-hover-focus);
+  color: var(--color-letra-blanca);
+}
+.portafolio-title,
+.portafolio-text{
   font-size: 18px;
   text-decoration: none;
-color: rgba(33, 33, 33, 1);
-cursor: pointer;
+  color: rgba(33, 33, 33, 1);
+  cursor: pointer;
 }
-.portafolio-title:hover, .portafolio-text:hover{
- color: rgba(33, 150, 243, 1);
+.portafolio-title:focus,
+.portafolio-text:focus{
+  color:var(--color-hover-focus)
 }
-.direccion{ 
-  color: rgba(255, 255, 255, 1);
+.portafolio-title:hover,
+.portafolio-text:hover {
+  color: var(--color-hover-focus)
+}
+.direccion {
+  color: var(--color-letra-blanca);
   text-decoration: none;
   cursor: pointer;
 }
-.direccion:hover{
-color:rgba(33, 150, 243, 1)
+.direccion:focus {
+  color: var(--color-hover-focus)
+}
+.direccion:hover {
+  color: var(--color-hover-focus)
 }
